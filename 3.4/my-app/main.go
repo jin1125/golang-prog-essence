@@ -22,4 +22,11 @@ func main() {
 	rs[4] = 'は'
 	s2 = string(rs)
 	fmt.Println(s2)
+
+	var content = `
+	複数行の
+	文章からなる
+	テキストです。
+	`
+	fmt.Println(content)
 }

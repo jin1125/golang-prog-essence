@@ -16,4 +16,10 @@ func main() {
 	b[0] = 'h'
 	s1 = string(b)
 	fmt.Println(s1)
+
+	s2 := "こんにちわ世界"
+	rs := []rune(s2)
+	rs[4] = 'は'
+	s2 = string(rs)
+	fmt.Println(s2)
 }

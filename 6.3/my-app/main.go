@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"encoding/csv"
+	"fmt"
 	"io"
 	"log"
 	"net/http"
@@ -50,7 +51,8 @@ func main() {
 			if err != nil {
 				log.Fatal(err)
 			}
-			insertRcords(records)
+			fmt.Println(records)
+			// insertRcords(records)
 		}
 	}
 	wg.Wait()
